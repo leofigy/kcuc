@@ -40,7 +40,7 @@ IP=$(multipass info k3s-master | grep IPv4 | awk '{print $2}')
 
 Al final tendremos un cluster virtualizado seteado 
 
-
+![cluster](vms.png)
 
 
 Basado en el tutorial [fuente](https://andreipope.github.io/tutorials/create-a-cluster-with-multipass-and-k3s.html)
