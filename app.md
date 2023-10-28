@@ -99,3 +99,55 @@ Podemos ver que nginx esta corriendo dentro del contenedor,
 ahora que sucede si tratamos de hacer curl <node>:80?
 
 ### creando el servicio
+
+```
+kubectl -n witcom create service clusterip nginx --tcp=80:80
+
+kubectl -n witcom describe service nginx
+Name:              nginx
+Namespace:         witcom
+Labels:            app=nginx
+Annotations:       <none>
+Selector:          app=nginx
+Type:              ClusterIP
+IP Family Policy:  SingleStack
+IP Families:       IPv4
+IP:                10.43.148.224
+IPs:               10.43.148.224
+Port:              80-80  80/TCP
+TargetPort:        80/TCP
+Endpoints:         10.42.0.8:80,10.42.1.4:80,10.42.2.3:80
+Session Affinity:  None
+Events:            <none>
+```
+
+los servicios como tal no tienen acceso desde el exterior, para eso necesitamos habilitar el ingreso
+
+## configurando el ingreso
+```
+ kubectl -n witcom apply -f scripts/ingress.yaml
+ ingress.networking.k8s.io/nginx created
+
+ kubectl describe ingress nginx
+ kubectl -n witcom describe ingress nginx
+Name:             nginx
+Labels:           <none>
+Namespace:        witcom
+Address:          172.31.113.111,172.31.114.105,172.31.119.253
+Ingress Class:    traefik
+Default backend:  <default>
+Rules:
+  Host        Path  Backends
+  ----        ----  --------
+  *
+              /   nginx:80 (10.42.0.8:80,10.42.1.4:80,10.42.2.3:80)
+Annotations:  ingress.kubernetes.io/ssl-redirect: false
+Events:       <none>
+```
+
+clue:  kubectl -n witcom logs <pod name>
+
+__experimento 1 accede al access log de nginx /var/log/nginx__
+__experimento 2 apaga uno de los contenedores__
+__experimento 3 apaga una de las maquinas virtuales__
+

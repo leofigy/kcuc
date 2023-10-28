@@ -82,34 +82,3 @@ kube-system   svclb-traefik-facebb17-2wsh6             2/2     Running     0    
 kube-system   svclb-traefik-facebb17-mstxq             2/2     Running     0          27m
 kube-system   traefik-64f55bb67d-vbvw8                 1/1     Running     0          27m
 ```
-
-los servicios como tal no tienen acceso desde el exterior, para eso necesitamos habilitar el ingreso
-
-## configurando el ingreso
-```
- kubectl -n witcom apply -f scripts/ingress.yaml
- ingress.networking.k8s.io/nginx created
-
- kubectl describe ingress nginx
- kubectl -n witcom describe ingress nginx
-Name:             nginx
-Labels:           <none>
-Namespace:        witcom
-Address:          172.31.113.111,172.31.114.105,172.31.119.253
-Ingress Class:    traefik
-Default backend:  <default>
-Rules:
-  Host        Path  Backends
-  ----        ----  --------
-  *
-              /   nginx:80 (10.42.0.8:80,10.42.1.4:80,10.42.2.3:80)
-Annotations:  ingress.kubernetes.io/ssl-redirect: false
-Events:       <none>
-```
-
-clue:  kubectl -n witcom logs <pod name>
-
-__experimento 1 accede al access log de nginx /var/log/nginx__
-__experimento 2 apaga uno de los contenedores__
-__experimento 3 apaga una de las maquinas virtuales__
-

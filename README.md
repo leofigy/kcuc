@@ -3,3 +3,5 @@
 
 - ## [Requisitos](nodos.md)
 - ## [Conceptos y kubectl](conceptos.md)
+- ## [app ngnix](app.md)
+- ## [custom app](TODO.md)
