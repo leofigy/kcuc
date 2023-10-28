@@ -10,7 +10,7 @@ podemos montar rápidamente un servidor web
 - un ingress 
 
 kubernetes soporta namespaces
-
+### creando el namespace y el deployment
 ```
 kubectl create namespace witcom
 kubectl -n witcom create deployment nginx --image=nginx --port=80 --replicas=3
@@ -97,3 +97,5 @@ Commercial support is available at
 Podemos ver que nginx esta corriendo dentro del contenedor, 
 
 ahora que sucede si tratamos de hacer curl <node>:80?
+
+### creando el servicio
