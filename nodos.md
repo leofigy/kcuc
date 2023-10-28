@@ -1,7 +1,8 @@
 
 ## requisitos
 
-- Windows pro (10/11), macos (catalina or newer) or linux 
+- Windows pro (10/11), macos (catalina or newer) or linux
+- git for windows just in case https://gitforwindows.org/
 - Instalar multipass https://multipass.run/install para la plataforma adecuada
 - Instalar kubectl
   -  https://kubernetes.io/es/docs/tasks/tools/included/install-kubectl-windows/
