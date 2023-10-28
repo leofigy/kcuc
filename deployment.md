@@ -3,15 +3,15 @@
 Conceptos 
 ----------------------------------------------------------------------------------------------------------------------------------------
 --Contenedores--
-- Contenedor          : Es un tipo de virtualizacion que nos permite aislar una aplicacion a traves de un control group
-- Grupo de control    : Es una collecion de procesos agrupados que se les puede establecer un limite de uso de recursos (cpu, memoria)
-- container runtime   : Para poder ejecutar contenedores existen diferentes tipos de sistemas de ejecucion, el mas famoso es Docker y su alternativa containerd
-- Registro de imagenes: Para poder distribuir las imagenes existen diferentes tipos de registros donde se guardan las imagenes (resultado de construir un contenedor) , el mas famoso es docker hub, sin embargo lo normal es tener un registro privado. 
+- Contenedor          : Es un tipo de virtualización que nos permite aislar una aplicación a través de un control group
+- Grupo de control    : Es una colección de procesos agrupados que se les puede establecer un limite de uso de recursos (cpu, memoria)
+- container runtime   : Para poder ejecutar contenedores existen diferentes tipos de sistemas de ejecución, el más famoso es Docker y su alternativa containerd
+- Registro de imagenes: Para poder distribuir las imagenes existen diferentes tipos de registros donde se guardan las imagenes (resultado de construir un contenedor) , el más famoso es docker hub, sin embargo lo normal es tener un registro privado. 
 ----------------------------------------------------------------------------------------------------------------------------------------
-- Kubernetes : Es un sistema de codigo abierto para la orquestacion de contenedores para automatizar el lanzamiento, manejo y escalabilidad de los mismos.
-- Nodo       : Un nodo puede ser una maquina virtual, una maquina fisica, que forma parte de los recursos de un cluster
+- Kubernetes : Es un sistema de código abierto para la orquestación de contenedores para automatizar el lanzamiento, manejo y escalabilidad de los mismos.
+- Nodo       : Un nodo puede ser una máquina virtual (vm), una maquina fisica(bare metal), que forma parte de los recursos de un cluster
 - Cluster    : Conjunto de nodos
-- Pod        : Unidad minima (abstraccion) en donde se puede deployar/instalar un conjunto de contenedores
+- Pod        : Unidad minima (abstracción) en donde se puede deployar/instalar un conjunto de contenedores
 - Service    : Un conjunto de pods asociados que representan a una aplicacion
 - Ingress    : Expone un a los servicios a fuera del cluster para que sean usados
 
