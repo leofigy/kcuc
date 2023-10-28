@@ -3,7 +3,7 @@
 
 ## requisitos
 
-- Windows 10 pro, macos (catalina or newer) or linux 
+- Windows pro (10/11), macos (catalina or newer) or linux 
 - Instalar multipass https://multipass.run/install para la plataforma adecuada
 - Instalar kubectl
   -  https://kubernetes.io/es/docs/tasks/tools/included/install-kubectl-windows/
