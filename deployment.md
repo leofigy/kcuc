@@ -62,3 +62,25 @@ si ejecutamos desde nuestra maquina host, solo necesitamos modificar la direccio
    kubectl get nodes
    kubectl get pods --all-namespaces
 ```
+
+en mi caso es 
+```
+$ export KUBECONFIG=$HOME/repos/kcuc/scripts/config.yaml
+$ kubectl get nodes
+NAME          STATUS   ROLES                  AGE   VERSION
+k3s-worker2   Ready    <none>                 27m   v1.27.6+k3s1
+k3s-master    Ready    control-plane,master   27m   v1.27.6+k3s1
+k3s-worker1   Ready    <none>                 27m   v1.27.6+k3s1
+
+$kubectl get pods --all-namespaces
+NAMESPACE     NAME                                     READY   STATUS      RESTARTS   AGE
+kube-system   local-path-provisioner-957fdf8bc-8z6th   1/1     Running     0          28m
+kube-system   coredns-77ccd57875-7nznn                 1/1     Running     0          28m
+kube-system   metrics-server-648b5df564-btwkt          1/1     Running     0          28m
+kube-system   helm-install-traefik-crd-2f8w9           0/1     Completed   0          28m
+kube-system   helm-install-traefik-kwlbv               0/1     Completed   1          28m
+kube-system   svclb-traefik-facebb17-nwvqx             2/2     Running     0          27m
+kube-system   svclb-traefik-facebb17-2wsh6             2/2     Running     0          27m
+kube-system   svclb-traefik-facebb17-mstxq             2/2     Running     0          27m
+kube-system   traefik-64f55bb67d-vbvw8                 1/1     Running     0          27m
+```
