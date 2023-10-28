@@ -1,6 +1,4 @@
-## Deployment 
-
-Conceptos 
+##  Conceptos 
 ----------------------------------------------------------------------------------------------------------------------------------------
 __Contenedores__
 - Contenedor          : Es un tipo de virtualización que nos permite aislar una aplicación a través de un control group
