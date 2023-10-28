@@ -28,7 +28,7 @@ NAME                              DESIRED   CURRENT   READY   AGE
 replicaset.apps/nginx-55f598f8d   3         3
 ```
 
-aun no configuramos la salida del deployment si queremos ver como funciona o que nodo esta 
+aun no configuramos la salida del deployment si queremos ver como funciona o en que nodo esta 
 ```
 kubectl -n witcom get pod -o wide
 NAME                    READY   STATUS    RESTARTS   AGE   IP          NODE          NOMINATED NODE   READINESS GATES
