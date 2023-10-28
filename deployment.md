@@ -2,7 +2,7 @@
 
 Conceptos 
 ----------------------------------------------------------------------------------------------------------------------------------------
---Contenedores--
+__Contenedores__
 - Contenedor          : Es un tipo de virtualización que nos permite aislar una aplicación a través de un control group
 - Grupo de control    : Es una colección de procesos agrupados que se les puede establecer un limite de uso de recursos (cpu, memoria)
 - container runtime   : Para poder ejecutar contenedores existen diferentes tipos de sistemas de ejecución, el más famoso es Docker y su alternativa containerd
@@ -31,8 +31,9 @@ Por defecto en el master node , esta ubicada la config por defecto en el siguien
    multipass exec k3s-master -- bash -c "sudo cat /etc/rancher/k3s/k3s.yaml"
 ```
 
-contenido del archivo de configuracion*
-*Nota de seguridad: Nunca suban archivos que comprometan la seguridad como certificados, aquí solo es por cuestión de demonstración*
+Contenido del archivo de configuracion
+__Nota de seguridad: Nunca suban archivos que comprometan la seguridad como certificados, aquí solo es por cuestión de demonstración__
+
 ```bash
 apiVersion: v1
 clusters:
