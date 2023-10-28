@@ -2,5 +2,4 @@
 101 kubectl y conceptos
 
 ## [requisitos](nodos.md)
-## Topics 
-### Mi primer deployment [deployment](deployment.md)
+## Mi primer deployment [deployment](deployment.md)
