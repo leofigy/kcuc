@@ -13,3 +13,5 @@ kubectl apply -f custom/ingress.yaml
 ```
 
 __experimento que sucede si el proceso principal muere__
+
+### [regresar](README.md)
