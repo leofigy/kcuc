@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 echo "creating vms"
-multipass launch -c 1 -m 1G -d 5G -n k3s-master 18.04
-multipass launch -c 1 -m 1G -d 5G -n k3s-worker1 18.04
-multipass launch -c 1 -m 1G -d 5G -n k3s-worker2 18.04
+multipass launch -c 1 -m 1.5G -d 5G -n k3s-master  20.04
+multipass launch -c 1 -m 1.5G -d 5G -n k3s-worker1 20.04
+multipass launch -c 1 -m 1.5G -d 5G -n k3s-worker2 20.04
 
 echo "setting k3s"
 multipass exec k3s-master -- bash -c "curl -sfL https://get.k3s.io | sh -"

@@ -1,0 +1,3 @@
+
+ sudo k3s agent --server https://172.25.93.167:6443 --token K101c6cc06f57fed11b6d998698203da88f0fa93a1d568cc039b0a13d84c4a82d38::serve
+r:428c1a3064afb0507f39f95c9442ee21
