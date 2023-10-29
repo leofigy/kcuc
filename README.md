@@ -3,5 +3,5 @@
 
 - ## [Requisitos](nodos.md)
 - ## [Conceptos y kubectl](conceptos.md)
-- ## [app ngnix](app.md)
-- ## [custom app](kcuc.md)
+- ## [Deployando un servidor web](app.md)
+- ## [Multiples servicios](kcuc.md)
