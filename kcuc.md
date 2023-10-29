@@ -14,8 +14,8 @@ kubectl apply -f custom/ingress.yaml
 
 __experimento que sucede si el proceso principal muere__
 
-Ahora resumiendo tenemos 2 servicios corriendo en el cluster, escuchando por diferentes puertos,
-para el usuario es transparente no se da cuenta que servicio lo esta atendiendo
+Hemos deployado 2 services un nginx y una app custom , que escuchan por diferentes paths, sin embargo como tenemos el mismo cluster podremos
+darnos cuenta que dependiendo la ruta, es el servicio que responde :) happy clustering 
 
 ```
 $ kubectl -n witcom get all
