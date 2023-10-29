@@ -19,13 +19,13 @@ func main() {
 	}
 
 	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
+	r.GET("/witcom/ping", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
 			"message": "pong",
 		})
 	})
 
-	r.GET("/", func(c *gin.Context) {
+	r.GET("/witcom", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
 			"message": "hello world, I'm " + hostname,
 		})
