@@ -8,4 +8,8 @@ Hemos creado una app custom para [demo](localbuild.md)
 
 ```
 kubectl apply -f custom/kcuc.yaml
+kubectl create service clusterip kcuc --tcp=90:90
+kubectl apply -f custom/ingress.yaml
 ```
+
+__experimento que sucede si el proceso principal muere__

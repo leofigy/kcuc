@@ -1,5 +1,8 @@
 ##  Conceptos 
 ----------------------------------------------------------------------------------------------------------------------------------------
+
+![cluster](objetivo.png)
+
 __Contenedores__
 - Contenedor          : Es un tipo de virtualización que nos permite aislar una aplicación a través de un control group
 - Grupo de control    : Es una colección de procesos agrupados que se les puede establecer un limite de uso de recursos (cpu, memoria)
