@@ -1,4 +1,4 @@
-# k8s apps with k3s (witcom2023)
+# K8S Apps - Aplicaciones con kubernetes (K3S) (witcom2023)
 101 kubectl y conceptos
 
 - ## [Requisitos](nodos.md)
