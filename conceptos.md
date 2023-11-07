@@ -26,7 +26,7 @@ Por defecto en el master node , esta ubicada la config por defecto en el siguien
 ```bash
 # just for playing a little bit 
    multipass list 
-   multi shell k3s-master
+   multipass shell k3s-master
    cat /etc/rancher/k3s/k3s.yaml
    # or
    multipass exec k3s-master -- bash -c "sudo cat /etc/rancher/k3s/k3s.yaml"
