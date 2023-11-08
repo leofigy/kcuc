@@ -128,7 +128,6 @@ los servicios como tal no tienen acceso desde el exterior, para eso necesitamos 
  kubectl -n witcom apply -f scripts/ingress.yaml
  ingress.networking.k8s.io/nginx created
 
- kubectl describe ingress nginx
  kubectl -n witcom describe ingress nginx
 Name:             nginx
 Labels:           <none>
